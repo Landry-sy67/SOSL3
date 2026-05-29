@@ -1,6 +1,6 @@
 <template>
 <nav class="bg-green-800 text-white px-8 py-4 flex items-center justify-between shadow-lg">
-  <img src="../assets/sos-logo.png" alt="Logo" class="h-10">   
+  <img src="/Man traveling logo black and white.png" alt="Logo" class="h-10 rounded-full">   
   
   <ul class="flex gap-8 font-medium">
     <li><router-link to="/" class="hover:text-yellow-300">Home</router-link></li>
