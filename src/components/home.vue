@@ -1,4 +1,7 @@
 <script setup>
+import { useI18n } from '../i18n.js'
+
+const { t } = useI18n()
 </script>
 <template>
   <!-- HERO SECTION -->
@@ -10,15 +13,15 @@
 
     <div class="relative text-center px-6 max-w-4xl">
       <p class="inline-flex items-center gap-2 px-4 py-2 mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200 bg-white/10 rounded-full border border-white/20">
-        Discover Rwanda
+        {{ t('home.tagline') }}
       </p>
-      <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-white leading-tight">Travel the Heart of Africa<br />with Warm Hospitality</h1>
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-white leading-tight">{{ t('home.heroTitle') }}</h1>
       <p class="text-lg md:text-xl mb-8 text-green-200 max-w-3xl mx-auto">
-        Explore Rwanda’s rolling hills, mountain gorillas, vibrant streets, and community-driven tourism in a destination that feels both adventurous and welcoming.
+        {{ t('home.heroSubtitle') }}
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <router-link to="/destinations" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full font-medium shadow-lg transition">Explore Destinations</router-link>
-        <router-link to="/about" class="inline-flex items-center justify-center border border-white/70 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition">Learn More</router-link>
+        <router-link to="/destinations" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full font-medium shadow-lg transition">{{ t('home.exploreButton') }}</router-link>
+        <router-link to="/about" class="inline-flex items-center justify-center border border-white/70 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition">{{ t('home.learnMoreButton') }}</router-link>
       </div>
     </div>
   </section>

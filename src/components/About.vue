@@ -1,3 +1,8 @@
+<script setup>
+import { useI18n } from '../i18n.js'
+
+const { t } = useI18n()
+</script>
 <template>
     <section
         class="relative min-h-screen bg-cover bg-center mt-12 flex items-center"
@@ -9,12 +14,12 @@
             <p class="inline-flex items-center gap-2 px-4 py-2 mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200 bg-white/10 rounded-full border border-white/20">
                 About Rwanda
             </p>
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Rwanda: Small Country, Big Experience</h1>
-            <p class="text-lg md:text-xl mb-6 max-w-3xl text-green-200">Explore a nation shaped by resilience and renewal, where eco-tourism, culture and clean city living come together in a welcoming, unforgettable journey.</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ t('about.title') }}</h1>
+            <p class="text-lg md:text-xl mb-6 max-w-3xl text-green-200">{{ t('about.description') }}</p>
 
             <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
-                <router-link to="/" class="bg-white text-emerald-700 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-slate-100 transition">Back Home</router-link>
-                <router-link to="/destinations" class="bg-emerald-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-emerald-600 transition">See Destinations</router-link>
+                <router-link to="/" class="bg-white text-emerald-700 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-slate-100 transition">{{ t('about.backHome') }}</router-link>
+                <router-link to="/destinations" class="bg-emerald-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-emerald-600 transition">{{ t('about.seeDestinations') }}</router-link>
             </div>
         </div>
     </section>
