@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { reactive, computed } from 'vue'
-=======
 import { ref, computed } from 'vue'
->>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
 
 const languages = {
   en: 'English',
@@ -45,15 +41,6 @@ const translations = {
       officialLanguages: 'Official languages'
     },
     services: {
-<<<<<<< HEAD
-      title: 'Our Services'
-    },
-    contact: {
-      title: 'Contact Us'
-    },
-    destinations: {
-      title: 'Our Destinations'
-=======
       title: 'Our Services',
       description: 'Explore curated tours, streamlined transport, and personalized planning for an unforgettable Rwanda journey.',
       guideTitle: 'Guided Tours',
@@ -73,7 +60,6 @@ const translations = {
     destinations: {
       title: 'Our Destinations',
       description: 'Rwanda is full of vibrant landscapes, mountain forests, and warm cities. Choose a destination to discover more.'
->>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'WELCOME TO NORTHERN PROVINCE',
@@ -126,15 +112,6 @@ const translations = {
       officialLanguages: 'Langues officielles'
     },
     services: {
-<<<<<<< HEAD
-      title: 'Nos Services'
-    },
-    contact: {
-      title: 'Contactez-nous'
-    },
-    destinations: {
-      title: 'Nos Destinations'
-=======
       title: 'Nos Services',
       description: 'Découvrez des circuits sur mesure, un transport fluide et une planification personnalisée pour un voyage inoubliable au Rwanda.',
       guideTitle: 'Visites guidées',
@@ -154,7 +131,6 @@ const translations = {
     destinations: {
       title: 'Nos Destinations',
       description: 'Le Rwanda regorge de paysages vibrants, de forêts de montagne et de villes chaleureuses. Choisissez une destination pour en découvrir davantage.'
->>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'BIENVENUE DANS LA PROVINCE DU NORD',
@@ -207,15 +183,6 @@ const translations = {
       officialLanguages: 'Idiomas oficiales'
     },
     services: {
-<<<<<<< HEAD
-      title: 'Nuestros Servicios'
-    },
-    contact: {
-      title: 'Contáctanos'
-    },
-    destinations: {
-      title: 'Nuestros Destinos'
-=======
       title: 'Nuestros Servicios',
       description: 'Descubre tours personalizados, transporte eficiente y planificación adaptada para un viaje memorable por Ruanda.',
       guideTitle: 'Tours guiados',
@@ -235,7 +202,6 @@ const translations = {
     destinations: {
       title: 'Nuestros Destinos',
       description: 'Ruanda está lleno de paisajes vibrantes, bosques montañosos y ciudades cálidas. Elige un destino para descubrir más.'
->>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'BIENVENIDO A LA PROVINCIA NORTE',
@@ -288,15 +254,6 @@ const translations = {
       officialLanguages: 'Indimi zemewe'
     },
     services: {
-<<<<<<< HEAD
-      title: 'Serivisi zacu'
-    },
-    contact: {
-      title: 'Twandikire'
-    },
-    destinations: {
-      title: 'Ahantu Hacu'
-=======
       title: 'Serivisi zacu',
       description: 'Sobanukirwa ingendo zateguwe, gutwara abantu byoroshye, no gutegura urugendo rwihariye mu Rwanda rwibagirana.',
       guideTitle: 'Inzira zanditswe',
@@ -316,7 +273,6 @@ const translations = {
     destinations: {
       title: 'Ahantu Hacu',
       description: 'U Rwanda ruzuye ahantu hafite ubuzima, amashyamba y’imisozi n’imijyi ishimishije. Hitamo ahantu kugirango umenye byinshi.'
->>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'MURAKAZA NEZA MU KARERE K’AMAJYARUGURU',
@@ -369,15 +325,6 @@ const translations = {
       officialLanguages: 'Offizielle Sprachen'
     },
     services: {
-<<<<<<< HEAD
-      title: 'Unsere Dienstleistungen'
-    },
-    contact: {
-      title: 'Kontaktieren Sie uns'
-    },
-    destinations: {
-      title: 'Unsere Reiseziele'
-=======
       title: 'Unsere Dienstleistungen',
       description: 'Entdecken Sie maßgeschneiderte Touren, reibungslosen Transport und persönliche Planung für eine unvergessliche Reise durch Ruanda.',
       guideTitle: 'Geführte Touren',
@@ -397,7 +344,6 @@ const translations = {
     destinations: {
       title: 'Unsere Reiseziele',
       description: 'Ruanda ist voller lebendiger Landschaften, Bergwälder und warmer Städte. Wählen Sie ein Reiseziel, um mehr zu entdecken.'
->>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'WILLKOMMEN IN DER NORDPROVINZ',
@@ -420,36 +366,6 @@ const translations = {
   }
 }
 
-<<<<<<< HEAD
-const state = reactive({ locale: 'en' })
-
-function getTranslation(path) {
-  const keys = path.split('.')
-  const localeData = translations[state.locale] || translations.en
-  const value = keys.reduce((current, key) => (current ? current[key] : undefined), localeData)
-  return value ?? keys[keys.length - 1]
-}
-
-export const availableLocales = computed(() =>
-  Object.keys(translations).map((code) => ({ code, label: languages[code] || code }))
-)
-
-export const currentLocaleLabel = computed(() => languages[state.locale] || state.locale)
-
-export function setLocale(locale) {
-  if (translations[locale]) {
-    state.locale = locale
-  }
-}
-
-export function useI18n() {
-  return {
-    locale: computed(() => state.locale),
-    currentLocaleLabel,
-    availableLocales,
-    setLocale,
-    t: getTranslation
-=======
 export const locale = ref('en')
 
 function getTranslation(path) {
@@ -470,6 +386,5 @@ export const currentLocaleLabel = computed(() => languages[locale.value] || loca
 export const setLocale = (newLocale) => {
   if (translations[newLocale]) {
     locale.value = newLocale
->>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
   }
 }
