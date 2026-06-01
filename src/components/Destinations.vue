@@ -14,43 +14,57 @@ import { t } from '../i18n.js'
           <div class="rounded-3xl overflow-hidden shadow-2xl">
             <div class="h-56 bg-cover bg-center" style="background-image: url('/kigali.png');"></div>
             <div class="bg-white p-6 text-green-900">
-              <h2 class="text-2xl font-semibold mb-3">Kigali</h2>
-              <p>Urban elegance, refined dining and museum tours—Kigali is the ideal starting point for modern Rwanda travel.</p>
+              <h2 class="text-2xl font-semibold mb-3">Kigali City</h2>
+              <p>Explore Rwanda’s energetic capital with art studios, markets, rooftop cafés and contemporary culture.</p>
             </div>
           </div>
           <div class="rounded-3xl overflow-hidden shadow-2xl">
             <div class="h-56 bg-cover bg-center" style="background-image: url('/kivu.png');"></div>
             <div class="bg-white p-6 text-green-900">
-              <h2 class="text-2xl font-semibold mb-3">Lake Kivu</h2>
-              <p>Enjoy luxury lakeside retreats, sunset cruises and fresh seafood dining against lush hilltop scenery.</p>
+              <h2 class="text-2xl font-semibold mb-3">Lake Kivu & Gisenyi</h2>
+              <p>Relax by the lake, cruise to island cafés and discover vibrant coffee communities along the shore.</p>
             </div>
           </div>
           <div class="rounded-3xl overflow-hidden shadow-2xl">
             <div class="h-56 bg-cover bg-center" style="background-image: url('/Living in Rwanda.png');"></div>
             <div class="bg-white p-6 text-green-900">
-              <h2 class="text-2xl font-semibold mb-3">Volcanoes</h2>
-              <p>Meet mountain gorillas, hike iconic volcano trails and relax in premium eco-lodges near the park.</p>
+              <h2 class="text-2xl font-semibold mb-3">Volcanoes National Park</h2>
+              <p>Track endangered mountain gorillas, hike forested ridges and stay in eco-lodges tucked into misty hills.</p>
             </div>
           </div>
           <div class="rounded-3xl overflow-hidden shadow-2xl">
             <div class="h-56 bg-cover bg-center" style="background-image: url('/Rwanda.png');"></div>
             <div class="bg-white p-6 text-green-900">
               <h2 class="text-2xl font-semibold mb-3">Nyungwe Forest</h2>
-              <p>Traverse canopy walkways, spot chimpanzees and unwind in rainforest luxury at one of Africa’s oldest forests.</p>
+              <p>Walk canopy bridges, spot chimpanzees and breathe in the oldest rainforest’s lush, emerald landscape.</p>
             </div>
           </div>
           <div class="rounded-3xl overflow-hidden shadow-2xl">
             <div class="h-56 bg-cover bg-center" style="background-image: url('/rwanda2.png');"></div>
             <div class="bg-white p-6 text-green-900">
-              <h2 class="text-2xl font-semibold mb-3">Akagera</h2>
-              <p>Experience guided safari drives, private game lodges and exceptional birding across expansive savannas.</p>
+              <h2 class="text-2xl font-semibold mb-3">Akagera Reserve</h2>
+              <p>Enjoy private game drives, boat safaris and spectacular birdlife across eastern Rwanda’s golden savanna.</p>
             </div>
           </div>
           <div class="rounded-3xl overflow-hidden shadow-2xl">
             <div class="h-56 bg-cover bg-center" style="background-image: url('/Rwanda 🇷🇼.png');"></div>
             <div class="bg-white p-6 text-green-900">
-              <h2 class="text-2xl font-semibold mb-3">Heritage Trails</h2>
-              <p>Discover village life, cultural ceremonies and Rwanda’s inspiring story through tailored heritage tours.</p>
+              <h2 class="text-2xl font-semibold mb-3">Musanze Caves</h2>
+              <p>Explore dramatic karst caverns and discover the volcanic heart of northern Rwanda.</p>
+            </div>
+          </div>
+          <div class="rounded-3xl overflow-hidden shadow-2xl">
+            <div class="h-56 bg-cover bg-center" style="background-image: url('/Rwanda.png');"></div>
+            <div class="bg-white p-6 text-green-900">
+              <h2 class="text-2xl font-semibold mb-3">King’s Palace Museum</h2>
+              <p>Step into Rwanda’s royal heritage with traditional architecture, cultural performances and history.</p>
+            </div>
+          </div>
+          <div class="rounded-3xl overflow-hidden shadow-2xl">
+            <div class="h-56 bg-cover bg-center" style="background-image: url('/rwanda2.png');"></div>
+            <div class="bg-white p-6 text-green-900">
+              <h2 class="text-2xl font-semibold mb-3">Lake Ihema Wetlands</h2>
+              <p>Take a quiet boat tour to see hippos, crocodiles and some of Rwanda’s most impressive birdlife.</p>
             </div>
           </div>
         </div>
