@@ -1,9 +1,13 @@
+<script setup>
+import { t } from '../i18n.js'
+</script>
+
 <template>
   <section class="min-h-screen bg-cover bg-center py-12" style="background-image: url('/Rwanda rw.png');">
     <div class="bg-white/90 min-h-screen">
       <div class="max-w-5xl mx-auto px-6 py-20 space-y-10">
         <div class="rounded-3xl bg-green-900/95 p-10 text-white shadow-2xl">
-          <h1 class="text-5xl font-bold mb-4">Northern Province</h1>
+          <h1 class="text-5xl font-bold mb-4">{{ t('regions.north') }}</h1>
           <p class="text-lg leading-relaxed">Northern Province offers rugged hills, national parks, and thrilling wildlife encounters. It is a top destination for mountain adventures and scenic exploration.</p>
         </div>
         <div class="grid gap-6 md:grid-cols-3">

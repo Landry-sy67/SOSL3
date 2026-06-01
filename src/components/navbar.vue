@@ -54,21 +54,6 @@ const flagMap = {
         </li>
       </ul>
     </li>
-<<<<<<< HEAD
-    
-    <li><router-link to="/contact" class="hover:text-yellow-300">Contact</router-link></li>
-    
-    <li class="relative group">
-      <span class="hover:text-yellow-300 cursor-pointer flex items-center">Language <span class="ml-1">⏑</span></span>
-      <ul class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bg-white text-green-900 rounded shadow w-40 top-full right-0 z-50">
-        <li><button class="block w-full text-left px-4 py-2 hover:bg-green-200">🇬🇧 English</button></li>
-        <li><button class="block w-full text-left px-4 py-2 hover:bg-green-200">🇫🇷 Français</button></li>
-        <li><button class="block w-full text-left px-4 py-2 hover:bg-green-200">🇪🇸 Español</button></li>
-      </ul>
-    </li>
-    
-=======
->>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
   </ul>
 </nav>
 </template>
