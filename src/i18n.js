@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { reactive, computed } from 'vue'
+=======
+import { ref, computed } from 'vue'
+>>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
 
 const languages = {
   en: 'English',
@@ -41,6 +45,7 @@ const translations = {
       officialLanguages: 'Official languages'
     },
     services: {
+<<<<<<< HEAD
       title: 'Our Services'
     },
     contact: {
@@ -48,6 +53,27 @@ const translations = {
     },
     destinations: {
       title: 'Our Destinations'
+=======
+      title: 'Our Services',
+      description: 'Explore curated tours, streamlined transport, and personalized planning for an unforgettable Rwanda journey.',
+      guideTitle: 'Guided Tours',
+      guideText: 'Explore Rwanda with experienced local guides who bring the country’s landscapes, wildlife, and culture to life.',
+      lodgingTitle: 'Luxury Lodging',
+      lodgingText: 'Stay in premium lodges and eco-retreats that blend comfort with spectacular views and sustainable hospitality.',
+      itineraryTitle: 'Custom Itineraries',
+      itineraryText: 'Design a travel plan that suits your interests—from gorilla trekking to cultural villages and lakeside relaxation.'
+    },
+    contact: {
+      title: 'Contact Us',
+      description: 'Reach out to our Rwanda travel specialists to plan your next adventure, book guided tours, or ask about accommodations.',
+      emailLabel: 'Email',
+      phoneLabel: 'Phone',
+      officeLabel: 'Office'
+    },
+    destinations: {
+      title: 'Our Destinations',
+      description: 'Rwanda is full of vibrant landscapes, mountain forests, and warm cities. Choose a destination to discover more.'
+>>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'WELCOME TO NORTHERN PROVINCE',
@@ -100,6 +126,7 @@ const translations = {
       officialLanguages: 'Langues officielles'
     },
     services: {
+<<<<<<< HEAD
       title: 'Nos Services'
     },
     contact: {
@@ -107,6 +134,27 @@ const translations = {
     },
     destinations: {
       title: 'Nos Destinations'
+=======
+      title: 'Nos Services',
+      description: 'Découvrez des circuits sur mesure, un transport fluide et une planification personnalisée pour un voyage inoubliable au Rwanda.',
+      guideTitle: 'Visites guidées',
+      guideText: 'Explorez le Rwanda avec des guides locaux expérimentés qui font vivre paysages, faune et culture.',
+      lodgingTitle: 'Hébergement de luxe',
+      lodgingText: 'Séjournez dans des lodges premium et des éco-retraites alliant confort, vues spectaculaires et hospitalité durable.',
+      itineraryTitle: 'Itinéraires personnalisés',
+      itineraryText: 'Concevez un programme adapté à vos envies, du trekking des gorilles aux villages culturels et à la détente au bord du lac.'
+    },
+    contact: {
+      title: 'Contactez-nous',
+      description: 'Contactez nos spécialistes du voyage au Rwanda pour planifier votre prochaine aventure, réserver des visites guidées ou obtenir de l’aide pour l’hébergement.',
+      emailLabel: 'E-mail',
+      phoneLabel: 'Téléphone',
+      officeLabel: 'Bureau'
+    },
+    destinations: {
+      title: 'Nos Destinations',
+      description: 'Le Rwanda regorge de paysages vibrants, de forêts de montagne et de villes chaleureuses. Choisissez une destination pour en découvrir davantage.'
+>>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'BIENVENUE DANS LA PROVINCE DU NORD',
@@ -159,6 +207,7 @@ const translations = {
       officialLanguages: 'Idiomas oficiales'
     },
     services: {
+<<<<<<< HEAD
       title: 'Nuestros Servicios'
     },
     contact: {
@@ -166,6 +215,27 @@ const translations = {
     },
     destinations: {
       title: 'Nuestros Destinos'
+=======
+      title: 'Nuestros Servicios',
+      description: 'Descubre tours personalizados, transporte eficiente y planificación adaptada para un viaje memorable por Ruanda.',
+      guideTitle: 'Tours guiados',
+      guideText: 'Explora Ruanda con guías locales con experiencia que dan vida a los paisajes, la fauna y la cultura.',
+      lodgingTitle: 'Alojamiento de lujo',
+      lodgingText: 'Hospédate en lodges premium y eco-retreats que combinan comodidad con vistas espectaculares y hospitalidad sostenible.',
+      itineraryTitle: 'Itinerarios personalizados',
+      itineraryText: 'Diseña un plan de viaje según tus intereses, desde trekking de gorillas hasta aldeas culturales y relajación junto al lago.'
+    },
+    contact: {
+      title: 'Contáctanos',
+      description: 'Contacta a nuestros especialistas en viajes a Ruanda para planear tu próxima aventura, reservar tours guiados o recibir ayuda con alojamientos.',
+      emailLabel: 'Correo',
+      phoneLabel: 'Teléfono',
+      officeLabel: 'Oficina'
+    },
+    destinations: {
+      title: 'Nuestros Destinos',
+      description: 'Ruanda está lleno de paisajes vibrantes, bosques montañosos y ciudades cálidas. Elige un destino para descubrir más.'
+>>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'BIENVENIDO A LA PROVINCIA NORTE',
@@ -218,6 +288,7 @@ const translations = {
       officialLanguages: 'Indimi zemewe'
     },
     services: {
+<<<<<<< HEAD
       title: 'Serivisi zacu'
     },
     contact: {
@@ -225,6 +296,27 @@ const translations = {
     },
     destinations: {
       title: 'Ahantu Hacu'
+=======
+      title: 'Serivisi zacu',
+      description: 'Sobanukirwa ingendo zateguwe, gutwara abantu byoroshye, no gutegura urugendo rwihariye mu Rwanda rwibagirana.',
+      guideTitle: 'Inzira zanditswe',
+      guideText: 'Sura u Rwanda hamwe n’abayobozi b’inzobere baturuka hano bazana imisozi, inyamaswa n’umuco mu buzima.',
+      lodgingTitle: 'Amahoteri y’icyubahiro',
+      lodgingText: 'Irahare muri lodge nziza n’amacumbi arengera ibidukikije yuzuzanya n’uburyohe n’amasura meza.',
+      itineraryTitle: 'Imigendekere yihariye',
+      itineraryText: 'Tegura gahunda ijyanye n’ibyo ukunda, kuva ku gusurira ingagi kugeza ku mateka n’akarere k’ibiyaga.'
+    },
+    contact: {
+      title: 'Twandikire',
+      description: 'Twandikire ku bahanga mu ngendo za Rwanda kugira ngo utegure urugendo rwawe rukurikije ibyifuzo byawe, ubone serivisi zo gusura cyangwa ubufasha bwo kubona icumbi.',
+      emailLabel: 'Imeli',
+      phoneLabel: 'Telefone',
+      officeLabel: 'Ibiro'
+    },
+    destinations: {
+      title: 'Ahantu Hacu',
+      description: 'U Rwanda ruzuye ahantu hafite ubuzima, amashyamba y’imisozi n’imijyi ishimishije. Hitamo ahantu kugirango umenye byinshi.'
+>>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'MURAKAZA NEZA MU KARERE K’AMAJYARUGURU',
@@ -277,6 +369,7 @@ const translations = {
       officialLanguages: 'Offizielle Sprachen'
     },
     services: {
+<<<<<<< HEAD
       title: 'Unsere Dienstleistungen'
     },
     contact: {
@@ -284,6 +377,27 @@ const translations = {
     },
     destinations: {
       title: 'Unsere Reiseziele'
+=======
+      title: 'Unsere Dienstleistungen',
+      description: 'Entdecken Sie maßgeschneiderte Touren, reibungslosen Transport und persönliche Planung für eine unvergessliche Reise durch Ruanda.',
+      guideTitle: 'Geführte Touren',
+      guideText: 'Erkunden Sie Ruanda mit erfahrenen lokalen Guides, die Landschaft, Tierwelt und Kultur zum Leben erwecken.',
+      lodgingTitle: 'Luxuriöse Unterkünfte',
+      lodgingText: 'Übernachten Sie in Premium-Lodges und Öko-Retreats, die Komfort mit spektakulären Aussichten und nachhaltiger Gastfreundschaft verbinden.',
+      itineraryTitle: 'Individuelle Reiserouten',
+      itineraryText: 'Gestalten Sie einen Reiseplan nach Ihren Interessen – von Gorillatrekking bis hin zu kulturellen Dörfern und Seeentspannung.'
+    },
+    contact: {
+      title: 'Kontaktieren Sie uns',
+      description: 'Kontaktieren Sie unsere Ruanda-Reisespezialisten, um Ihr nächstes Abenteuer zu planen, geführte Touren zu buchen oder Hilfe bei Unterkünften zu erhalten.',
+      emailLabel: 'E-Mail',
+      phoneLabel: 'Telefon',
+      officeLabel: 'Büro'
+    },
+    destinations: {
+      title: 'Unsere Reiseziele',
+      description: 'Ruanda ist voller lebendiger Landschaften, Bergwälder und warmer Städte. Wählen Sie ein Reiseziel, um mehr zu entdecken.'
+>>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
     },
     regions: {
       north: 'WILLKOMMEN IN DER NORDPROVINZ',
@@ -306,6 +420,7 @@ const translations = {
   }
 }
 
+<<<<<<< HEAD
 const state = reactive({ locale: 'en' })
 
 function getTranslation(path) {
@@ -334,5 +449,27 @@ export function useI18n() {
     availableLocales,
     setLocale,
     t: getTranslation
+=======
+export const locale = ref('en')
+
+function getTranslation(path) {
+  const keys = path.split('.')
+  const localeData = translations[locale.value] || translations.en
+  const value = keys.reduce((current, key) => (current ? current[key] : undefined), localeData)
+  return value ?? path
+}
+
+export const t = getTranslation
+
+export const languageOptions = computed(() =>
+  Object.keys(translations).map((code) => ({ code, label: languages[code] || code }))
+)
+
+export const currentLocaleLabel = computed(() => languages[locale.value] || locale.value)
+
+export const setLocale = (newLocale) => {
+  if (translations[newLocale]) {
+    locale.value = newLocale
+>>>>>>> 6ceddf6 (Professional page redesign: enhanced copy, added multilingual support with Kinyarwanda, improved destinations detail, added photo gallery refinements and new travel images)
   }
 }
