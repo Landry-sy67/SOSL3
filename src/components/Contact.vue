@@ -1,5 +1,17 @@
 <script setup>
+import { ref } from 'vue'
 import { t } from '../i18n.js'
+
+const form = ref({ name: '', email: '', message: '' })
+const sent = ref(false)
+
+function handleSubmit() {
+  if (form.value.name && form.value.email && form.value.message) {
+    sent.value = true
+    form.value = { name: '', email: '', message: '' }
+    setTimeout(() => { sent.value = false }, 4000)
+  }
+}
 </script>
 
 <template>
@@ -28,20 +40,21 @@ import { t } from '../i18n.js'
               <p class="mt-6 text-slate-600">Our travel advisors reply within 24 hours and are ready to help you plan a seamless Rwanda itinerary.</p>
             </div>
             <div class="p-10 bg-green-50">
-              <form class="space-y-6">
+              <form @submit.prevent="handleSubmit" class="space-y-6">
                 <div>
                   <label class="block text-sm font-medium text-green-900">Name</label>
-                  <input placeholder="Your full name" type="text" class="mt-2 w-full rounded-xl border border-green-200 p-3" />
+                  <input v-model="form.name" placeholder="Your full name" type="text" class="mt-2 w-full rounded-xl border border-green-200 p-3" />
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-green-900">Email</label>
-                  <input placeholder="you@example.com" type="email" class="mt-2 w-full rounded-xl border border-green-200 p-3" />
+                  <input v-model="form.email" placeholder="you@example.com" type="email" class="mt-2 w-full rounded-xl border border-green-200 p-3" />
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-green-900">Message</label>
-                  <textarea placeholder="Tell us about your travel plans" class="mt-2 w-full rounded-xl border border-green-200 p-3 h-32"></textarea>
+                  <textarea v-model="form.message" placeholder="Tell us about your travel plans" class="mt-2 w-full rounded-xl border border-green-200 p-3 h-32"></textarea>
                 </div>
-                <button class="w-full rounded-xl bg-green-800 text-white px-5 py-3 font-semibold hover:bg-green-900">Send Message</button>
+                <p v-if="sent" class="text-green-600 text-sm text-center">Message sent successfully! We'll get back to you soon.</p>
+                <button type="submit" class="w-full rounded-xl bg-green-800 text-white px-5 py-3 font-semibold hover:bg-green-900">Send Message</button>
               </form>
             </div>
           </div>

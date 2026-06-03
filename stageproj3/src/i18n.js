@@ -24,13 +24,7 @@ const translations = {
       westernProvince: 'Western Province',
       easternProvince: 'Eastern Province',
       kigaliCity: 'Kigali City',
-      language: 'Language',
-      login: 'Login',
-      register: 'Register',
-      dashboard: 'Dashboard',
-      overview: 'Overview',
-      bookings: 'Bookings',
-      logout: 'Logout'
+      language: 'Language'
     },
     home: {
       tagline: 'Discover Rwanda',
@@ -65,7 +59,7 @@ const translations = {
     },
     destinations: {
       title: 'Our Destinations',
-      description: 'Rwanda is full of vibrant landscapes, mountain forests, and warm cities. Choose a destination to discover more.'
+      description: 'From gorilla treks and rainforest canopies to lakefront escapes and safari reserves, Rwanda offers unforgettable travel moments.'
     },
     regions: {
       north: 'WELCOME TO NORTHERN PROVINCE',
@@ -101,13 +95,7 @@ const translations = {
       westernProvince: 'Province de l’Ouest',
       easternProvince: 'Province de l’Est',
       kigaliCity: 'Ville de Kigali',
-      language: 'Langue',
-      login: 'Connexion',
-      register: 'S\'inscrire',
-      dashboard: 'Tableau de bord',
-      overview: 'Aperçu',
-      bookings: 'Réservations',
-      logout: 'Déconnexion'
+      language: 'Langue'
     },
     home: {
       tagline: 'Découvrez le Rwanda',
@@ -142,7 +130,7 @@ const translations = {
     },
     destinations: {
       title: 'Nos Destinations',
-      description: 'Le Rwanda regorge de paysages vibrants, de forets de montagne et de villes chaleureuses. Choisissez une destination pour en decouvrir davantage.'
+      description: 'Des treks de gorilles aux forêts tropicales, en passant par les bords du lac et les réserves de safari, le Rwanda offre des expériences inoubliables.'
     },
     regions: {
       north: 'BIENVENUE DANS LA PROVINCE DU NORD',
@@ -178,13 +166,7 @@ const translations = {
       westernProvince: 'Provincia Oeste',
       easternProvince: 'Provincia Este',
       kigaliCity: 'Ciudad de Kigali',
-      language: 'Idioma',
-      login: 'Iniciar sesión',
-      register: 'Registrarse',
-      dashboard: 'Panel',
-      overview: 'Resumen',
-      bookings: 'Reservas',
-      logout: 'Cerrar sesión'
+      language: 'Idioma'
     },
     home: {
       tagline: 'Descubre Ruanda',
@@ -219,7 +201,7 @@ const translations = {
     },
     destinations: {
       title: 'Nuestros Destinos',
-      description: 'Ruanda esta lleno de paisajes vibrantes, bosques montanosos y ciudades calidas. Elige un destino para descubrir mas.'
+      description: 'Desde safaris y selvas tropicales hasta lagos tranquilos y cultura viva, Ruanda ofrece experiencias de viaje inolvidables.'
     },
     regions: {
       north: 'BIENVENIDO A LA PROVINCIA NORTE',
@@ -255,13 +237,7 @@ const translations = {
       westernProvince: 'Akarere k’Uburengerazuba',
       easternProvince: 'Akarere k’Uburasirazuba',
       kigaliCity: 'Umujyi wa Kigali',
-      language: 'Ururimi',
-      login: 'Injira',
-      register: 'Iyandikishe',
-      dashboard: 'Ikibaho',
-      overview: 'Icyegeranyo',
-      bookings: 'Gufata icyarazwi',
-      logout: 'Sohoka'
+      language: 'Ururimi'
     },
     home: {
       tagline: 'Menya u Rwanda',
@@ -296,7 +272,7 @@ const translations = {
     },
     destinations: {
       title: 'Ahantu Hacu',
-      description: 'U Rwanda ruzuye ahantu hafite ubuzima, amashyamba y'imisozi n'imijyi ishimishije. Hitamo ahantu kugirango umenye byinshi.'
+      description: 'U Rwanda rurimo gusura ingagi, amashyamba y’imisozi, ibiyaga byuje amahoro n’ubusitani bw’inyamaswa—ibi byose bituma urugendo rwawe rutibagirana.'
     },
     regions: {
       north: 'MURAKAZA NEZA MU KARERE K’AMAJYARUGURU',
@@ -332,13 +308,7 @@ const translations = {
       westernProvince: 'Westprovinz',
       easternProvince: 'Ostprovinz',
       kigaliCity: 'Stadt Kigali',
-      language: 'Sprache',
-      login: 'Anmelden',
-      register: 'Registrieren',
-      dashboard: 'Dashboard',
-      overview: 'Übersicht',
-      bookings: 'Buchungen',
-      logout: 'Abmelden'
+      language: 'Sprache'
     },
     home: {
       tagline: 'Entdecke Ruanda',
@@ -373,7 +343,7 @@ const translations = {
     },
     destinations: {
       title: 'Unsere Reiseziele',
-      description: 'Ruanda ist voller lebendiger Landschaften, Bergwalder und warmer Stadte. Wahlen Sie ein Reiseziel, um mehr zu entdecken.'
+      description: 'Von Berggorillas und Regenwäldern bis zu Seen und Safari-Reservaten bietet Ruanda unvergessliche Reiseerlebnisse.'
     },
     regions: {
       north: 'WILLKOMMEN IN DER NORDPROVINZ',

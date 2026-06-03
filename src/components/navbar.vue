@@ -1,5 +1,9 @@
 <script setup>
 import { t, languageOptions, currentLocaleLabel, setLocale, locale } from '../i18n.js'
+import { isAuthenticated, user, logout } from '../auth.js'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 const flagMap = {
   en: '🇬🇧',
@@ -7,6 +11,11 @@ const flagMap = {
   es: '🇪🇸',
   rw: '🇷🇼',
   de: '🇩🇪'
+}
+
+function handleLogout() {
+  logout()
+  router.push('/')
 }
 </script>
 
@@ -40,6 +49,22 @@ const flagMap = {
 
     <li><router-link to="/contact" class="hover:text-yellow-300">{{ t('nav.contact') }}</router-link></li>
 
+    <li v-if="!isAuthenticated">
+      <router-link to="/login" class="hover:text-yellow-300">{{ t('nav.login') }}</router-link>
+    </li>
+    <li v-if="!isAuthenticated">
+      <router-link to="/register" class="hover:text-yellow-300">{{ t('nav.register') }}</router-link>
+    </li>
+
+    <li v-if="isAuthenticated" class="relative group">
+      <span class="hover:text-yellow-300 cursor-pointer flex items-center">{{ user?.name }} <span class="ml-1">⏑</span></span>
+      <ul class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bg-white text-green-900 rounded shadow w-48 top-full right-0 z-50">
+        <li><router-link to="/overview" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ t('nav.overview') }}</router-link></li>
+        <li><router-link to="/bookings" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ t('nav.bookings') }}</router-link></li>
+        <li><router-link to="/dashboard" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ t('nav.dashboard') }}</router-link></li>
+        <li><button @click="handleLogout" class="block w-full text-left px-4 py-2 hover:bg-green-200 text-green-900">{{ t('nav.logout') }}</button></li>
+      </ul>
+    </li>
     <li class="relative group">
       <span class="hover:text-yellow-300 cursor-pointer flex items-center">{{ currentLocaleLabel }} <span class="ml-1">⏑</span></span>
       <ul class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bg-white text-green-900 rounded shadow w-56 top-full right-0 z-50">
