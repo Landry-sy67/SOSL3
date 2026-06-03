@@ -296,7 +296,7 @@ const translations = {
     },
     destinations: {
       title: 'Ahantu Hacu',
-      description: 'U Rwanda ruzuye ahantu hafite ubuzima, amashyamba y'imisozi n'imijyi ishimishije. Hitamo ahantu kugirango umenye byinshi.'
+      description: "U Rwanda ruzuye ahantu hafite ubuzima, amashyamba y'imisozi n'imijyi ishimishije. Hitamo ahantu kugirango umenye byinshi."
     },
     regions: {
       north: 'MURAKAZA NEZA MU KARERE K’AMAJYARUGURU',
